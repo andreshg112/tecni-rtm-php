@@ -1,4 +1,4 @@
-# [Tecni-RTM](http://tecnimaq.com/index.php/tecni-rtm/) client for Laravel.
+# Cliente de [Tecni-RTM](http://tecnimaq.com/index.php/tecni-rtm/) para Laravel.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-laravel)
 [![Build Status](https://img.shields.io/travis/andreshg112/tecni-rtm-laravel/master.svg?style=flat-square)](https://travis-ci.com/andreshg112/tecni-rtm-laravel)
