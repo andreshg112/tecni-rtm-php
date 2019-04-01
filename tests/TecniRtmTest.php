@@ -84,7 +84,7 @@ class TecniRtmTest extends TestCase
                     'created_at' => '2015-08-07T18:01:51.038-05:00',
                     'updated_at' => '2015-08-07T18:01:51.038-05:00',
                 ],
-            ]
+            ],
         ];
 
         $mockedResponse = [
@@ -165,7 +165,7 @@ class TecniRtmTest extends TestCase
                     'created_at' => '2015-08-07T18:01:51.038-05:00',
                     'updated_at' => '2015-08-07T18:01:51.038-05:00',
                 ],
-            ]
+            ],
         ];
 
         $mockedResponse = [
