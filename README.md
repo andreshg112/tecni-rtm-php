@@ -11,7 +11,7 @@ Este paquete permite consultar las revisiones técnico-mecánicas (tecnomecánic
 
 ## Requisitos
 
--   Laravel >= 5.0
+-   Laravel >= 5.4
 -   PHP >= 7.1
 
 > Si quieres soporte para una versión inferior a las especificadas, por favor deja la petición en los [Issues](../../issues) y veré qué puedo hacer.
