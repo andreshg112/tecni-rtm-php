@@ -24,7 +24,7 @@
     },
     "require-dev": {
         "codedungeon/phpunit-result-printer": "^0.26.1",
-        "orchestra/testbench": "^3.0",
+        "orchestra/testbench": "^3.4",
         "phpunit/phpunit": "^7.0"
     },
     "autoload": {
