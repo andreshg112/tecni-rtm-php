@@ -1,9 +1,10 @@
 # Cliente de [Tecni-RTM](http://tecnimaq.com/index.php/tecni-rtm/) para Laravel.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-laravel)
-[![Build Status](https://img.shields.io/travis/andreshg112/tecni-rtm-laravel/master.svg?style=flat-square)](https://travis-ci.com/andreshg112/tecni-rtm-laravel)
-[![Quality Score](https://img.shields.io/scrutinizer/g/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/andreshg112/tecni-rtm-laravel/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel/?branch=master)
+[![Build Status](https://travis-ci.com/andreshg112/tecni-rtm-laravel.svg?branch=master)](https://travis-ci.com/andreshg112/tecni-rtm-laravel)
+[![StyleCI](https://styleci.io/repos/177488663/shield)](https://styleci.io/repos/177488663)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-laravel)
 
 Este paquete permite consultar las revisiones técnico-mecánicas (tecnomecánicas) en curso y completadas del sistema Tecni-RTM a través de la API que el software ofrece.
@@ -11,7 +12,7 @@ Este paquete permite consultar las revisiones técnico-mecánicas (tecnomecánic
 ## Requisitos
 
 -   Laravel >= 5.0
--   PHP >= 5.6
+-   PHP >= 7.1
 
 > Si quieres soporte para una versión inferior a las especificadas, por favor deja la petición en los [Issues](../../issues) y veré qué puedo hacer.
 
