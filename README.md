@@ -3,6 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-laravel)
 [![Build Status](https://img.shields.io/travis/andreshg112/tecni-rtm-laravel/master.svg?style=flat-square)](https://travis-ci.com/andreshg112/tecni-rtm-laravel)
 [![Quality Score](https://img.shields.io/scrutinizer/g/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/andreshg112/tecni-rtm-laravel/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-laravel/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/andreshg112/tecni-rtm-laravel.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-laravel)
 
 Este paquete permite consultar las revisiones técnico-mecánicas (tecnomecánicas) en curso y completadas del sistema Tecni-RTM a través de la API que el software ofrece.
