@@ -49,7 +49,7 @@ class TecniRtm
 
         $response = $this->http->post($url, ['json' => $json]);
 
-        $result = json_decode((string) $response->getBody(), true);
+        $result = json_decode((string)$response->getBody(), true);
         $payloadResponse = json_decode($result['payload'], true);
 
         return $payloadResponse;
@@ -70,7 +70,7 @@ class TecniRtm
 
         $response = $this->http->post($url, ['json' => $json]);
 
-        $result = json_decode((string) $response->getBody(), true);
+        $result = json_decode((string)$response->getBody(), true);
         $payload = json_decode($result['payload'], true);
 
         return $payload;

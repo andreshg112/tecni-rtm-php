@@ -2,17 +2,11 @@
 
 namespace Andreshg112\TecniRtm\Tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
 use Orchestra\Testbench\TestCase;
-use Andreshg112\TecniRtm\TecniRtm;
-use GuzzleHttp\Handler\MockHandler;
-use function GuzzleHttp\json_encode;
 use Andreshg112\TecniRtm\TecniRtmFacade;
 use Andreshg112\TecniRtm\TecniRtmServiceProvider;
 
-class TecniRtmTest extends TestCase
+class LaravelTest extends TestCase
 {
     protected function getPackageProviders($app)
     {
@@ -29,7 +23,7 @@ class TecniRtmTest extends TestCase
     {
         // Esta no es la verdadera estructura de la respuesta de la API.
         // Se debe modificar cuando se conozca la estructura.
-        $payload = [
+        $mockedResponse = [
             [
                 'datos_custom' => [],
                 'placa' => 'XBHL80B',
@@ -84,33 +78,22 @@ class TecniRtmTest extends TestCase
                     'created_at' => '2015-08-07T18:01:51.038-05:00',
                     'updated_at' => '2015-08-07T18:01:51.038-05:00',
                 ],
-            ]
+            ],
         ];
 
-        $mockedResponse = [
-            'payload' => json_encode($payload),
-        ];
+        TecniRtmFacade::shouldReceive('completedReviews')
+            ->once()
+            ->andReturns($mockedResponse);
 
-        /** @var callable $mock */
-        $mock = new MockHandler([
-            new Response(200, [], json_encode($mockedResponse)),
-        ]);
+        $reviews = TecniRtmFacade::completedReviews();
 
-        $handler = HandlerStack::create($mock);
-
-        $http = new Client(['handler' => $handler]);
-
-        $tecniRtm = new TecniRtm($http);
-
-        $reviews = $tecniRtm->completedReviews();
-
-        $this->assertArraySubset($payload, $reviews);
+        $this->assertArraySubset($mockedResponse, $reviews);
     }
 
     /** @test */
     public function it_returns_a_list_of_ongoing_reviews()
     {
-        $payload = [
+        $mockedResponse = [
             [
                 'datos_custom' => [],
                 'placa' => 'XBHL80B',
@@ -165,26 +148,15 @@ class TecniRtmTest extends TestCase
                     'created_at' => '2015-08-07T18:01:51.038-05:00',
                     'updated_at' => '2015-08-07T18:01:51.038-05:00',
                 ],
-            ]
+            ],
         ];
 
-        $mockedResponse = [
-            'payload' => json_encode($payload),
-        ];
+        TecniRtmFacade::shouldReceive('ongoingReviews')
+            ->once()
+            ->andReturns($mockedResponse);
 
-        /** @var callable $mock */
-        $mock = new MockHandler([
-            new Response(200, [], json_encode($mockedResponse)),
-        ]);
+        $reviews = TecniRtmFacade::ongoingReviews();
 
-        $handler = HandlerStack::create($mock);
-
-        $http = new Client(['handler' => $handler]);
-
-        $tecniRtm = new TecniRtm($http);
-
-        $reviews = $tecniRtm->ongoingReviews();
-
-        $this->assertArraySubset($payload, $reviews);
+        $this->assertArraySubset($mockedResponse, $reviews);
     }
 }

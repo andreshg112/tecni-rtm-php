@@ -11,7 +11,7 @@ Este paquete permite consultar las revisiones técnico-mecánicas (tecnomecánic
 
 ## Requisitos
 
--   Laravel >= 5.4
+-   Laravel >= 5.5
 -   PHP >= 7.1
 
 > Si quieres soporte para una versión inferior a las especificadas, por favor deja la petición en los [Issues](../../issues) y veré qué puedo hacer.
@@ -24,14 +24,7 @@ Puedes instalar el paquete a través de composer:
 composer require andreshg112/tecni-rtm-laravel
 ```
 
-Si usas Laravel <= 5.5, debes agregar el paquete a los `providers` de `config/app.php` así:
-
-```php
-'providers' => [
-    /// ...
-    \Andreshg112\TecniRtm\TecniRtmServiceProvider::class,
-],
-```
+> Este paquete usa [Laravel Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery), por lo tanto no se debe agregar el paquete a los `providers` de `config/app.php`.
 
 Luego, se recomienda publicar el archivo de configuración así:
 
@@ -41,11 +34,11 @@ php artisan vendor:publish
 
 Y escoger el que diga `Andreshg112\TecniRtm\TecniRtmServiceProvider`.
 
-Luego, puedes configurar los datos de acceso en el archivo `.env` los cuales son indicados en el archivo `config/tecni-rtm.php`.
+Después, puedes configurar los datos de acceso en el archivo `.env` los cuales son indicados en el archivo `config/tecni-rtm.php`.
 
 ## Uso
 
-Para consultar revisiones completadas:
+Para consultar revisiones terminadas:
 
 ```php
 use Andreshg112\TecniRtm\TecniRtmFacade;
