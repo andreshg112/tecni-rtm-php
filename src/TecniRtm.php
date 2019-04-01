@@ -36,11 +36,11 @@ class TecniRtm
      * @return array
      */
     public function completedReviews()
-    { 
+    {
         $url = "{$this->host}/api/revisiones-terminadas";
         $timestamp = time();
         $payload = config('tecni-rtm.payload');
-        $signature = hash("sha256", $payload . $timestamp . $this->secret);
+        $signature = hash('sha256', $payload . $timestamp . $this->secret);
 
         $json = [
             'api_key' => $this->apiKey, 'timestamp' => $timestamp, 'signature' => $signature,
@@ -49,7 +49,7 @@ class TecniRtm
 
         $response = $this->http->post($url, ['json' => $json]);
 
-        $result = json_decode((string)$response->getBody(), true);
+        $result = json_decode((string) $response->getBody(), true);
         $payloadResponse = json_decode($result['payload'], true);
 
         return $payloadResponse;
@@ -64,13 +64,13 @@ class TecniRtm
     {
         $url = "{$this->host}/api/revisiones-en-curso";
         $timestamp = time();
-        $signature = hash("sha256", $timestamp . $this->secret);
+        $signature = hash('sha256', $timestamp . $this->secret);
 
         $json = ['api_key' => $this->apiKey, 'timestamp' => $timestamp, 'signature' => $signature];
 
         $response = $this->http->post($url, ['json' => $json]);
 
-        $result = json_decode((string)$response->getBody(), true);
+        $result = json_decode((string) $response->getBody(), true);
         $payload = json_decode($result['payload'], true);
 
         return $payload;
