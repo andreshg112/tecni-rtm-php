@@ -1,5 +1,5 @@
 {
-    "name": "andreshg112/tecni-rtm-laravel",
+    "name": "andreshg112/tecni-rtm-php",
     "description": "Cliente de Laravel para Tecni-RTM (http://tecnimaq.com/index.php/tecni-rtm).",
     "keywords": [
         "andreshg112",
@@ -8,7 +8,7 @@
         "mecánica",
         "tecnomecánica"
     ],
-    "homepage": "https://github.com/andreshg112/tecni-rtm-laravel",
+    "homepage": "https://github.com/andreshg112/tecni-rtm-php",
     "license": "MIT",
     "type": "library",
     "authors": [
