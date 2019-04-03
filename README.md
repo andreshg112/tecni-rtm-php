@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/tecni-rtm-php.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-php)
 [![Build Status](https://travis-ci.com/andreshg112/tecni-rtm-php.svg?branch=master)](https://travis-ci.com/andreshg112/tecni-rtm-php)
-[![StyleCI](https://styleci.io/repos/177488663/shield)](https://styleci.io/repos/177488663)
+[![StyleCI](https://github.styleci.io/repos/178762963/shield?branch=master)](https://github.styleci.io/repos/178762963)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-php/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/tecni-rtm-php/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/andreshg112/tecni-rtm-php.svg?style=flat-square)](https://packagist.org/packages/andreshg112/tecni-rtm-php)
